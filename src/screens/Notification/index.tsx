@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
-function Feed() {
+function Notification() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed!</Text>
+      <Text>Notification!</Text>
     </View>
   );
 }
-export default Feed;
+export default Notification;

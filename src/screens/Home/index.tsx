@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { View, Text } from 'react-native';
 
-function Alerts() {
+const Home = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Alerts!</Text>
+      <Text>Home!</Text>
     </View>
   );
-}
-export default Alerts;
+};
+
+export default Home;
