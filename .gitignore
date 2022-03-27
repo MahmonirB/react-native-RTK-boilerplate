@@ -64,4 +64,4 @@ android/gradle.properties
 .history
 ios/Pods
 .vscode/
-
+*.hprof
