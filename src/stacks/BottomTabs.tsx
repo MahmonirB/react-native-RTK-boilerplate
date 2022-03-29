@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Notification from 'src/screens/Notification';
 import Explore from 'src/screens/Explore';
@@ -21,7 +21,7 @@ function BottomTabs() {
         component={Home}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}
@@ -31,7 +31,7 @@ function BottomTabs() {
         component={Notification}
         options={{
           tabBarLabel: 'Notifications',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="bell" color={color} size={size} />
           ),
           tabBarBadge: 3,
@@ -42,7 +42,7 @@ function BottomTabs() {
         component={Explore}
         options={{
           tabBarLabel: 'Explore',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
         }}
