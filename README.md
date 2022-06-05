@@ -1,6 +1,6 @@
 # react-native-RTK-boilerplate
 
-A react native, redux toolkit, react-navigation and typescript boilerplate
+A react native, redux toolkit, react-navigation and typescript template which everybody can clone and use it as a starting point of project.
 
 ## Contains
 
