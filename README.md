@@ -31,4 +31,34 @@ A react native, redux toolkit, react-navigation and typescript template which ev
 - Node 12 or greater
 - Development for iOS requires a Mac and Xcode 10 or up
 
+## Getting start
+
+To start your own project, you can create it from this template to install all useful packages once.
+  `npx react-native init MyApp --template MahmonirB/react-native-RTK-boilerplate`
+
 ## Common problems
+
+- If you run `yarn android` for the first time and get this error,
+  > A problem occurred evaluating project :app. Could not get unknown property **FLIPPER_VERSION** for object of type org gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
+
+  - Solve: Add **gradle.properties** file into `/android` folder, and set these lines:
+
+    ```
+    android.useAndroidX=true
+    android.enableJetifier=true
+    FLIPPER_VERSION=0.99.0
+    ```
+
+- If you run `yarn android` and get this error,
+  > Could not determine the dependencies of task app:compileDebugJavaWithJavac. SDK location not found. Define location with an ANDROID_SDK_ROOT environment variable or by setting the sdk.dir path in your projects local properties file at xxx/android/local.properties.
+  - Solve: Add **local.properties** file into `/android` folder, and set
+    `sdk.dir=/Users/[userName]/Library/Android/sdk`
+  into it
+
+- If you run `yarn android` and get this error:
+  > What went wrong: Execution failed for task app:packageDebug. > A failure occurred while executing com.android.build.gradle.tasks.PackageAndroidArtifact$IncrementalSplitterRunnable > java.lang.OutOfMemoryError (no error message)
+  >
+  - Solve: Add this line to **gradle.properties**
+    `org.gradle.jvmargs=-Xmx4608m`
+
+- If you faced to this error, `Error: spawn /var/folders/xxx/T/rncli-init-template-IACwt5/node_modules/react-native-RTK-boilerplate/script.js EACCES`, please keep calm, it is not serious and you can continue with using your started package.
