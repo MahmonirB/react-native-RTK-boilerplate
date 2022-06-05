@@ -2,6 +2,11 @@
 
 A react native, redux toolkit, react-navigation and typescript template which everybody can clone and use it as a starting point of project.
 
+## Getting start
+
+To start your own project, you can create it from this template to install all useful packages once.
+  `npx react-native init MyApp --template MahmonirB/react-native-RTK-boilerplate`
+
 ## Contains
 
 - "react-native": "0.68.2"
@@ -22,6 +27,10 @@ A react native, redux toolkit, react-navigation and typescript template which ev
 - "typescript": "^4.7.3"
 - "react-native-vector-icons": "^9.1.0"
 
+## Demo
+
+![Demo](./homePage.png)
+
 ## Features
 
 - Structured project with absolute import
@@ -30,11 +39,6 @@ A react native, redux toolkit, react-navigation and typescript template which ev
 
 - Node 12 or greater
 - Development for iOS requires a Mac and Xcode 10 or up
-
-## Getting start
-
-To start your own project, you can create it from this template to install all useful packages once.
-  `npx react-native init MyApp --template MahmonirB/react-native-RTK-boilerplate`
 
 ## Common problems
 
